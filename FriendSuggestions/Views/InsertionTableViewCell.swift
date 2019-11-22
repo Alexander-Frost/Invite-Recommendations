@@ -19,6 +19,7 @@ class InsertionTableViewCell: UITableViewCell {
     // MARK: - Outlets
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
     
     // MARK: - VC Lifecycle
     
@@ -53,10 +54,10 @@ extension InsertionTableViewCell: UITableViewDataSource {
         
         // We only want to display 3 suggestions at a time
         if contactCount >= 3 {
-            //tableViewHeightConstraint.constant = 3 * cellHeight // Set height of tableview
+            tableViewHeightConstraint.constant = 3 * cellHeight // Set height of tableview
             return 3
         } else {
-            //tableViewHeightConstraint.constant = CGFloat(contactCount) * cellHeight
+            tableViewHeightConstraint.constant = CGFloat(contactCount) * cellHeight
             return contactCount
         }
     }
@@ -69,6 +70,10 @@ extension InsertionTableViewCell: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellHeight
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
