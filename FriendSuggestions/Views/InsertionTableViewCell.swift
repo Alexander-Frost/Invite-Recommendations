@@ -62,9 +62,21 @@ extension InsertionTableViewCell: UITableViewDataSource {
         }
     }
     
+    @objc func hideRow(sender: UIButton){
+        print("Hiding row")
+        
+        let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
+        guard let currentIndex = tableView.indexPathForRow(at: buttonPosition) else {return}
+        
+//        tableView.deleteRows(at: [currentIndex], with: UITableView.RowAnimation.automatic)
+    }
+    
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("SuggestionsTableViewCell", owner: self, options: nil)?.first as! SuggestionsTableViewCell
         cell.friendSuggestion = contactsController.imageContacts[indexPath.row]
+        cell.exitBtn.addTarget(self, action: #selector(hideRow(sender:)), for: .touchDown)
         return cell
     }
     
