@@ -16,8 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K6E-38-hZr">
-                                <rect key="frame" x="0.0" y="60" width="414" height="802"/>
+                                <rect key="frame" x="0.0" y="76" width="414" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="g7S-aI-ZqQ"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="YEW-7M-gbG">
                                         <rect key="frame" x="0.0" y="28" width="414" height="64"/>
@@ -30,7 +33,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended people for you!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBn-av-Ymt">
-                                <rect key="frame" x="16" y="33.5" width="219" height="18.5"/>
+                                <rect key="frame" x="16" y="49.5" width="219" height="18.5"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                 <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -38,8 +41,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="K6E-38-hZr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="4hM-0W-raG"/>
-                            <constraint firstItem="K6E-38-hZr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BbE-qc-yHu"/>
+                            <constraint firstItem="K6E-38-hZr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="4hM-0W-raG"/>
                             <constraint firstItem="K6E-38-hZr" firstAttribute="top" secondItem="nBn-av-Ymt" secondAttribute="bottom" constant="8" id="SSI-HC-m8U"/>
                             <constraint firstItem="K6E-38-hZr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TzQ-WQ-7jF"/>
                             <constraint firstItem="K6E-38-hZr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aaO-Zo-eny"/>
@@ -49,6 +51,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="K6E-38-hZr" id="DpO-UZ-22S"/>
+                        <outlet property="tableViewHeightConstraint" destination="g7S-aI-ZqQ" id="84H-WI-6p0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

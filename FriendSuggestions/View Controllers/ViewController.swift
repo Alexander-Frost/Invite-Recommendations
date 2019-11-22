@@ -14,9 +14,12 @@ class ViewController: UIViewController {
     
     let contactsController = ContactsController()
     
+    let cellHeight: CGFloat = 70.0
+    
     // MARK: - Outlets
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
     
     // MARK: - VC Lifecycle
     
@@ -27,10 +30,6 @@ class ViewController: UIViewController {
         tableView.delegate = self
         
         print(contactsController.contacts.count, contactsController.imageContacts.count)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.tableView.sizeToFit()
-        }
     }
 }
 
@@ -45,8 +44,10 @@ extension ViewController: UITableViewDataSource {
         
         // We only want to display 3 suggestions at a time
         if contactCount >= 3 {
+            tableViewHeightConstraint.constant = 3 * cellHeight
             return 3
         } else {
+            tableViewHeightConstraint.constant = CGFloat(contactCount) * cellHeight
             return contactCount
         }
     }
@@ -58,6 +59,6 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60.0
+        return cellHeight
     }
 }
