@@ -33,7 +33,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended people for you!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBn-av-Ymt">
-                                <rect key="frame" x="16" y="49.5" width="219" height="18.5"/>
+                                <rect key="frame" x="16" y="53.5" width="219" height="18.5"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                 <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -42,7 +42,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="K6E-38-hZr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="4hM-0W-raG"/>
-                            <constraint firstItem="K6E-38-hZr" firstAttribute="top" secondItem="nBn-av-Ymt" secondAttribute="bottom" constant="8" id="SSI-HC-m8U"/>
+                            <constraint firstItem="K6E-38-hZr" firstAttribute="top" secondItem="nBn-av-Ymt" secondAttribute="bottom" constant="4" id="SSI-HC-m8U"/>
                             <constraint firstItem="K6E-38-hZr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TzQ-WQ-7jF"/>
                             <constraint firstItem="K6E-38-hZr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aaO-Zo-eny"/>
                             <constraint firstItem="nBn-av-Ymt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xEQ-kM-JjX"/>

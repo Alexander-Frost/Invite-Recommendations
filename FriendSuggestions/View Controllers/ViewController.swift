@@ -44,7 +44,7 @@ extension ViewController: UITableViewDataSource {
         
         // We only want to display 3 suggestions at a time
         if contactCount >= 3 {
-            tableViewHeightConstraint.constant = 3 * cellHeight
+            tableViewHeightConstraint.constant = 3 * cellHeight // Set height of tableview
             return 3
         } else {
             tableViewHeightConstraint.constant = CGFloat(contactCount) * cellHeight
