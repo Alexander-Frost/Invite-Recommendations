@@ -13,6 +13,11 @@
 		FA28FEA3238655CA0050A0DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA28FEA1238655CA0050A0DC /* Main.storyboard */; };
 		FA28FEA5238655CB0050A0DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA28FEA4238655CB0050A0DC /* Assets.xcassets */; };
 		FA28FEA8238655CB0050A0DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA28FEA6238655CB0050A0DC /* LaunchScreen.storyboard */; };
+		FA28FEB123865F570050A0DC /* SuggestionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */; };
+		FA28FEB223865F570050A0DC /* SuggestionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA28FEB023865F570050A0DC /* SuggestionsTableViewCell.xib */; };
+		FA7DD79D238844DD00E6268A /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DD79C238844DD00E6268A /* ContactsController.swift */; };
+		FA7DD79F238844EA00E6268A /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DD79E238844EA00E6268A /* Contacts.swift */; };
+		FA7DD7A32388476200E6268A /* FriendSuggestionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7DD7A22388476200E6268A /* FriendSuggestionsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		FA28FEA4238655CB0050A0DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA28FEA7238655CB0050A0DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA28FEA9238655CB0050A0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsTableViewCell.swift; sourceTree = "<group>"; };
+		FA28FEB023865F570050A0DC /* SuggestionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestionsTableViewCell.xib; sourceTree = "<group>"; };
+		FA7DD79C238844DD00E6268A /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
+		FA7DD79E238844EA00E6268A /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		FA7DD7A22388476200E6268A /* FriendSuggestionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendSuggestionsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,50 @@
 			children = (
 				FA28FE9B238655CA0050A0DC /* AppDelegate.swift */,
 				FA28FE9D238655CA0050A0DC /* SceneDelegate.swift */,
-				FA28FE9F238655CA0050A0DC /* ViewController.swift */,
+				FA7DD7A02388450700E6268A /* Models */,
+				FA7DD7A12388468000E6268A /* Controllers */,
+				FA7DD7A42388619700E6268A /* View Controllers */,
+				FA28FEB323865F5E0050A0DC /* Views */,
 				FA28FEA1238655CA0050A0DC /* Main.storyboard */,
 				FA28FEA4238655CB0050A0DC /* Assets.xcassets */,
 				FA28FEA6238655CB0050A0DC /* LaunchScreen.storyboard */,
 				FA28FEA9238655CB0050A0DC /* Info.plist */,
 			);
 			path = FriendSuggestions;
+			sourceTree = "<group>";
+		};
+		FA28FEB323865F5E0050A0DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA7DD7A22388476200E6268A /* FriendSuggestionsTableViewCell.xib */,
+				FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */,
+				FA28FEB023865F570050A0DC /* SuggestionsTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA7DD7A02388450700E6268A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA7DD79E238844EA00E6268A /* Contacts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA7DD7A12388468000E6268A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7DD79C238844DD00E6268A /* ContactsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA7DD7A42388619700E6268A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA28FE9F238655CA0050A0DC /* ViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +174,9 @@
 			files = (
 				FA28FEA8238655CB0050A0DC /* LaunchScreen.storyboard in Resources */,
 				FA28FEA5238655CB0050A0DC /* Assets.xcassets in Resources */,
+				FA7DD7A32388476200E6268A /* FriendSuggestionsTableViewCell.xib in Resources */,
 				FA28FEA3238655CA0050A0DC /* Main.storyboard in Resources */,
+				FA28FEB223865F570050A0DC /* SuggestionsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA28FEA0238655CA0050A0DC /* ViewController.swift in Sources */,
+				FA7DD79D238844DD00E6268A /* ContactsController.swift in Sources */,
+				FA7DD79F238844EA00E6268A /* Contacts.swift in Sources */,
 				FA28FE9C238655CA0050A0DC /* AppDelegate.swift in Sources */,
 				FA28FE9E238655CA0050A0DC /* SceneDelegate.swift in Sources */,
+				FA28FEB123865F570050A0DC /* SuggestionsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +343,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AlexMata.FriendSuggestions;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weekend.FriendSuggestions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +361,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AlexMata.FriendSuggestions;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weekend.FriendSuggestions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
