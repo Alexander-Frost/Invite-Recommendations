@@ -17,6 +17,9 @@
 		FA7DD79D238844DD00E6268A /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DD79C238844DD00E6268A /* ContactsController.swift */; };
 		FA7DD79F238844EA00E6268A /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DD79E238844EA00E6268A /* Contacts.swift */; };
 		FA7DD7A32388476200E6268A /* SuggestionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7DD7A22388476200E6268A /* SuggestionsTableViewCell.xib */; };
+		FAA503632388739A00BE4958 /* MainTestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA503622388739A00BE4958 /* MainTestTableViewController.swift */; };
+		FAA50366238884B400BE4958 /* InsertionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA50364238884B400BE4958 /* InsertionTableViewCell.swift */; };
+		FAA50367238884B400BE4958 /* InsertionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA50365238884B400BE4958 /* InsertionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		FA7DD79C238844DD00E6268A /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
 		FA7DD79E238844EA00E6268A /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		FA7DD7A22388476200E6268A /* SuggestionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestionsTableViewCell.xib; sourceTree = "<group>"; };
+		FAA503622388739A00BE4958 /* MainTestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTestTableViewController.swift; sourceTree = "<group>"; };
+		FAA50364238884B400BE4958 /* InsertionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionTableViewCell.swift; sourceTree = "<group>"; };
+		FAA50365238884B400BE4958 /* InsertionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InsertionTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 			children = (
 				FA7DD7A22388476200E6268A /* SuggestionsTableViewCell.xib */,
 				FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */,
+				FAA50364238884B400BE4958 /* InsertionTableViewCell.swift */,
+				FAA50365238884B400BE4958 /* InsertionTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				FA28FE9F238655CA0050A0DC /* ViewController.swift */,
+				FAA503622388739A00BE4958 /* MainTestTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -169,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA50367238884B400BE4958 /* InsertionTableViewCell.xib in Resources */,
 				FA28FEA8238655CB0050A0DC /* LaunchScreen.storyboard in Resources */,
 				FA28FEA5238655CB0050A0DC /* Assets.xcassets in Resources */,
 				FA7DD7A32388476200E6268A /* SuggestionsTableViewCell.xib in Resources */,
@@ -184,9 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA28FEA0238655CA0050A0DC /* ViewController.swift in Sources */,
+				FAA503632388739A00BE4958 /* MainTestTableViewController.swift in Sources */,
 				FA7DD79D238844DD00E6268A /* ContactsController.swift in Sources */,
 				FA7DD79F238844EA00E6268A /* Contacts.swift in Sources */,
 				FA28FE9C238655CA0050A0DC /* AppDelegate.swift in Sources */,
+				FAA50366238884B400BE4958 /* InsertionTableViewCell.swift in Sources */,
 				FA28FE9E238655CA0050A0DC /* SceneDelegate.swift in Sources */,
 				FA28FEB123865F570050A0DC /* SuggestionsTableViewCell.swift in Sources */,
 			);
