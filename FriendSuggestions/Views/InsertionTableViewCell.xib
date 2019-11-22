@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sks-rH-Cei">
-                        <rect key="frame" x="20" y="11" width="379" height="246"/>
+                        <rect key="frame" x="0.0" y="11" width="419" height="246"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="246" id="tXc-Cy-88M"/>
@@ -25,9 +25,9 @@
                     </tableView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="sks-rH-Cei" secondAttribute="trailing" id="Hc8-Xv-UuC"/>
+                    <constraint firstItem="sks-rH-Cei" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5Ns-BF-T1j"/>
+                    <constraint firstAttribute="trailing" secondItem="sks-rH-Cei" secondAttribute="trailing" id="VlV-0v-Fib"/>
                     <constraint firstItem="sks-rH-Cei" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="hVc-Ef-Nte"/>
-                    <constraint firstItem="sks-rH-Cei" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ojE-a2-8Tm"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
