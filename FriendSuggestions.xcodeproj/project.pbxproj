@@ -85,10 +85,10 @@
 		FA28FEB323865F5E0050A0DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAA50365238884B400BE4958 /* InsertionTableViewCell.xib */,
+				FAA50364238884B400BE4958 /* InsertionTableViewCell.swift */,
 				FA7DD7A22388476200E6268A /* SuggestionsTableViewCell.xib */,
 				FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */,
-				FAA50364238884B400BE4958 /* InsertionTableViewCell.swift */,
-				FAA50365238884B400BE4958 /* InsertionTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";

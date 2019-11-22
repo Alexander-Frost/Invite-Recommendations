@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class SuggestionsTableViewCell: UITableViewCell {
 
@@ -32,7 +33,9 @@ class SuggestionsTableViewCell: UITableViewCell {
     // MARK: - Actions
     
     @IBAction func addBtnPressed(_ sender: UIButton) {
-        
+        print("Invite suggestion")
+        // Code below
+        sendText(contact: friendSuggestion!)
     }
     @IBAction func exitBtnPressed(_ sender: UIButton) {
         print("Remove suggestion")
@@ -81,6 +84,22 @@ class SuggestionsTableViewCell: UITableViewCell {
     
 }
 
+extension SuggestionsTableViewCell: MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate {
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        controller.dismiss(animated: true)
+    }
+    
+    func sendText(contact: Contacts){
+        if MFMessageComposeViewController.canSendText() {
+            let controller = MFMessageComposeViewController()
+            controller.body = "HELLOOOO"
+            controller.recipients = [contact.number]
+            controller.messageComposeDelegate = self
+            self.parentViewController?.present(controller, animated: true, completion: nil)
+        } else {print("Cannot send message. Error.")}
+    }
+}
+
 extension String {
     var initials: String {
         return self.components(separatedBy: " ").filter { !$0.isEmpty }.reduce("") { ($0 == "" ? "" : "\($0.first!)") + "\($1.first!)" }.uppercased()
@@ -98,5 +117,16 @@ extension UIView {
         self.layer.cornerRadius = radius
         self.layer.masksToBounds = true
         self.layer.isOpaque = false
+    }
+    
+    var parentViewController: UIViewController? {
+        var parentResponder: UIResponder? = self
+        while parentResponder != nil {
+            parentResponder = parentResponder!.next
+            if parentResponder is UIViewController {
+                return parentResponder as? UIViewController
+            }
+        }
+        return nil
     }
 }
