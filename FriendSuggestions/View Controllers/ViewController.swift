@@ -27,6 +27,10 @@ class ViewController: UIViewController {
         tableView.delegate = self
         
         print(contactsController.contacts.count, contactsController.imageContacts.count)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.tableView.sizeToFit()
+        }
     }
 }
 
@@ -53,4 +57,7 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60.0
+    }
 }
