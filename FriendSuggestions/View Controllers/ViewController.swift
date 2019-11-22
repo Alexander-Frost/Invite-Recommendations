@@ -36,7 +36,15 @@ extension ViewController: UITableViewDelegate {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        contactsController.imageContacts.count
+        
+        let contactCount = contactsController.imageContacts.count
+        
+        // We only want to display 3 suggestions at a time
+        if contactCount >= 3 {
+            return 3
+        } else {
+            return contactCount
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
