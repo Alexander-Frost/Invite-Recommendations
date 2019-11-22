@@ -6,7 +6,7 @@
 //  Copyright © 2019 Alex. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Contacts {
     let givenName: String
@@ -14,4 +14,6 @@ struct Contacts {
     let number: String
     var isAdded: Bool
     var timeAdded: String
+    
+    let avatar: UIImage?
 }

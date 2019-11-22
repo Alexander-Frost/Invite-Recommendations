@@ -23,12 +23,29 @@ class ContactsController {
         }
     }
     
+    var imageContacts = [Contacts]() {
+        didSet { // Sort Contacts
+            contacts = contacts.sorted(by: { (contactA, contactB) -> Bool in
+                (contactA.givenName + contactA.familyName) < (contactB.givenName + contactB.familyName)
+            })
+        }
+    }
+    
+    // MARK: - Init
+    
+    init(){
+        fetchContacts { (err) in
+            if let err = err {print("Error: ", err)}
+        }
+    }
+    
     // MARK: - Methods
     
     public func fetchContacts(completion: @escaping (Error?) -> Void) {
         let key = [CNContactGivenNameKey,CNContactFamilyNameKey, CNContactPhoneNumbersKey, CNContactImageDataAvailableKey, CNContactThumbnailImageDataKey] as [CNKeyDescriptor]
         let request = CNContactFetchRequest(keysToFetch: key)
         var myContacts = [Contacts]()
+        var myImageContacts = [Contacts]()
         do {
             try contactStore.enumerateContacts(with: request) { (contact, stoppingPointer) in
                 if !contact.givenName.isEmpty && !contact.phoneNumbers.isEmpty {
@@ -36,17 +53,24 @@ class ContactsController {
                     let familyName = contact.familyName
                     let number = self.formatNum(number: contact.phoneNumbers.first?.value.stringValue ?? "No Number")
                     if number == nil {return}
+                    
+                    let contactToAppend: Contacts
+                    
                     // get thumbnail image
                     if let thumbnailData = contact.thumbnailImageData, contact.imageDataAvailable {
                         let image = UIImage(data: thumbnailData)
+                        contactToAppend = Contacts(givenName: name, familyName: familyName, number: number ?? "No Name", isAdded: false, timeAdded: "NA", avatar: image)
+                        myImageContacts.append(contactToAppend)
+                    } else {
+                        contactToAppend = Contacts(givenName: name, familyName: familyName, number: number ?? "No Name", isAdded: false, timeAdded: "NA", avatar: nil)
                     }
 
-                    let contactToAppend = Contacts(givenName: name, familyName: familyName, number: number ?? "No Name", isAdded: false, timeAdded: "NA")
                     myContacts.append(contactToAppend)
                 }
                 completion(nil)
             }
             contacts = myContacts
+            imageContacts = myImageContacts
         } catch {
             NSLog("There was an error requesting contacts!")
             completion(nil)

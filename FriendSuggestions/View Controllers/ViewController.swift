@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: - Properties
+    
+    let contactsController = ContactsController()
+    
     // MARK: - Outlets
     
     @IBOutlet weak var tableView: UITableView!
@@ -19,6 +23,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        print(contactsController.contacts.count, contactsController.imageContacts.count)
     }
 
 
