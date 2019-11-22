@@ -53,7 +53,7 @@
                             <constraint firstAttribute="height" constant="38" id="eTS-7g-nG4"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                        <state key="normal" title="+ Add">
+                        <state key="normal" title="+ Invite">
                             <color key="titleColor" red="0.61568627450000002" green="0.61568627450000002" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                         <connections>
