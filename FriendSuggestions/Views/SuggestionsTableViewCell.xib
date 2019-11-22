@@ -9,24 +9,79 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="SuggestionsTableViewCell" customModule="FriendSuggestions" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="SuggestionsTableViewCell" customModule="FriendSuggestions" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="71"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                <rect key="frame" x="0.0" y="0.0" width="396" height="71"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-Vn-HQd">
-                        <rect key="frame" x="37" y="18" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="yM3-NE-e9A">
+                        <rect key="frame" x="70" y="16" width="125" height="39.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8b-ug-nFX">
+                                <rect key="frame" x="0.0" y="0.0" width="125" height="20"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start a conversation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epM-Ue-D9d">
+                                <rect key="frame" x="0.0" y="23" width="125" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" red="0.61568627450000002" green="0.61568627450000002" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uUx-Q9-MtY">
+                        <rect key="frame" x="16" y="14.5" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="FpA-Xj-J9f"/>
+                            <constraint firstAttribute="height" constant="42" id="xLl-H2-3ZH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJo-Wr-dZd">
+                        <rect key="frame" x="26" y="25.5" width="22" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6M-H2-QXs">
+                        <rect key="frame" x="308" y="16.5" width="64" height="38"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="aMy-8G-Csg"/>
+                            <constraint firstAttribute="height" constant="38" id="eTS-7g-nG4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <state key="normal" title="+ Add">
+                            <color key="titleColor" red="0.61568627450000002" green="0.61568627450000002" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="addBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wwo-R8-3aA"/>
+                        </connections>
+                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="uUx-Q9-MtY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4c2-6f-FEA"/>
+                    <constraint firstItem="uUx-Q9-MtY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5AT-RR-izq"/>
+                    <constraint firstItem="HJo-Wr-dZd" firstAttribute="centerY" secondItem="uUx-Q9-MtY" secondAttribute="centerY" id="8nq-8x-bsn"/>
+                    <constraint firstItem="yM3-NE-e9A" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BtY-NU-KGK"/>
+                    <constraint firstItem="I6M-H2-QXs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Kcs-HQ-ozK"/>
+                    <constraint firstItem="HJo-Wr-dZd" firstAttribute="centerX" secondItem="uUx-Q9-MtY" secondAttribute="centerX" id="YOR-Jk-MJ3"/>
+                    <constraint firstAttribute="trailing" secondItem="I6M-H2-QXs" secondAttribute="trailing" constant="24" id="f7a-kK-ePK"/>
+                    <constraint firstItem="yM3-NE-e9A" firstAttribute="leading" secondItem="uUx-Q9-MtY" secondAttribute="trailing" constant="12" id="h80-tJ-9ff"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="137.68115942028987" y="124.21875"/>
+            <connections>
+                <outlet property="addBtn" destination="I6M-H2-QXs" id="XQh-9x-41n"/>
+                <outlet property="initialsLbl" destination="HJo-Wr-dZd" id="qLN-yA-OOM"/>
+                <outlet property="nameLbl" destination="C8b-ug-nFX" id="EJC-gX-IN4"/>
+                <outlet property="subtitleLbl" destination="epM-Ue-D9d" id="oU1-v7-0GJ"/>
+                <outlet property="userImageView" destination="uUx-Q9-MtY" id="0f9-4o-ds8"/>
+            </connections>
+            <point key="canvasLocation" x="186.95652173913044" y="120.20089285714285"/>
         </tableViewCell>
     </objects>
 </document>

@@ -14,10 +14,9 @@
 		FA28FEA5238655CB0050A0DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA28FEA4238655CB0050A0DC /* Assets.xcassets */; };
 		FA28FEA8238655CB0050A0DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA28FEA6238655CB0050A0DC /* LaunchScreen.storyboard */; };
 		FA28FEB123865F570050A0DC /* SuggestionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */; };
-		FA28FEB223865F570050A0DC /* SuggestionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA28FEB023865F570050A0DC /* SuggestionsTableViewCell.xib */; };
 		FA7DD79D238844DD00E6268A /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DD79C238844DD00E6268A /* ContactsController.swift */; };
 		FA7DD79F238844EA00E6268A /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DD79E238844EA00E6268A /* Contacts.swift */; };
-		FA7DD7A32388476200E6268A /* FriendSuggestionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7DD7A22388476200E6268A /* FriendSuggestionsTableViewCell.xib */; };
+		FA7DD7A32388476200E6268A /* SuggestionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7DD7A22388476200E6268A /* SuggestionsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +29,9 @@
 		FA28FEA7238655CB0050A0DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA28FEA9238655CB0050A0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsTableViewCell.swift; sourceTree = "<group>"; };
-		FA28FEB023865F570050A0DC /* SuggestionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestionsTableViewCell.xib; sourceTree = "<group>"; };
 		FA7DD79C238844DD00E6268A /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
 		FA7DD79E238844EA00E6268A /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
-		FA7DD7A22388476200E6268A /* FriendSuggestionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendSuggestionsTableViewCell.xib; sourceTree = "<group>"; };
+		FA7DD7A22388476200E6268A /* SuggestionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestionsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +81,8 @@
 		FA28FEB323865F5E0050A0DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FA7DD7A22388476200E6268A /* FriendSuggestionsTableViewCell.xib */,
+				FA7DD7A22388476200E6268A /* SuggestionsTableViewCell.xib */,
 				FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */,
-				FA28FEB023865F570050A0DC /* SuggestionsTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,9 +171,8 @@
 			files = (
 				FA28FEA8238655CB0050A0DC /* LaunchScreen.storyboard in Resources */,
 				FA28FEA5238655CB0050A0DC /* Assets.xcassets in Resources */,
-				FA7DD7A32388476200E6268A /* FriendSuggestionsTableViewCell.xib in Resources */,
+				FA7DD7A32388476200E6268A /* SuggestionsTableViewCell.xib in Resources */,
 				FA28FEA3238655CA0050A0DC /* Main.storyboard in Resources */,
-				FA28FEB223865F570050A0DC /* SuggestionsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
