@@ -17,17 +17,25 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sks-rH-Cei">
-                        <rect key="frame" x="0.0" y="11" width="419" height="246"/>
+                        <rect key="frame" x="0.0" y="23" width="419" height="246"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="246" id="tXc-Cy-88M"/>
                         </constraints>
                     </tableView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended people for you!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odl-NT-E9Q">
+                        <rect key="frame" x="16" y="6" width="219" height="18.5"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="sks-rH-Cei" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5Ns-BF-T1j"/>
+                    <constraint firstItem="odl-NT-E9Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Lv9-AY-MRR"/>
                     <constraint firstAttribute="trailing" secondItem="sks-rH-Cei" secondAttribute="trailing" id="VlV-0v-Fib"/>
-                    <constraint firstItem="sks-rH-Cei" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="hVc-Ef-Nte"/>
+                    <constraint firstItem="sks-rH-Cei" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="hVc-Ef-Nte"/>
+                    <constraint firstItem="odl-NT-E9Q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="kdy-8d-2pp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
