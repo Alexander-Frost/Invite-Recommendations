@@ -10,12 +10,23 @@ import UIKit
 
 class MainTestTableViewController: UITableViewController {
 
+    // MARK: - Properties
+    
+    
+    // MARK: - VC Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.tableFooterView = UIView()
     }
 
+    // MARK: - Insert
+    
+    private func insertArray(){
+        
+    }
+    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

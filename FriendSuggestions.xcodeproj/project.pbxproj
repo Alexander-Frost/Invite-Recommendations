@@ -19,6 +19,7 @@
 		FAA503632388739A00BE4958 /* MainTestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA503622388739A00BE4958 /* MainTestTableViewController.swift */; };
 		FAA50366238884B400BE4958 /* InsertionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA50364238884B400BE4958 /* InsertionTableViewCell.swift */; };
 		FAA50367238884B400BE4958 /* InsertionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA50365238884B400BE4958 /* InsertionTableViewCell.xib */; };
+		FAF71A6D2388C4D500B24AC0 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF71A6C2388C4D500B24AC0 /* Feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FAA503622388739A00BE4958 /* MainTestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTestTableViewController.swift; sourceTree = "<group>"; };
 		FAA50364238884B400BE4958 /* InsertionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionTableViewCell.swift; sourceTree = "<group>"; };
 		FAA50365238884B400BE4958 /* InsertionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InsertionTableViewCell.xib; sourceTree = "<group>"; };
+		FAF71A6C2388C4D500B24AC0 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				FA7DD79E238844EA00E6268A /* Contacts.swift */,
+				FAF71A6C2388C4D500B24AC0 /* Feed.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA503632388739A00BE4958 /* MainTestTableViewController.swift in Sources */,
+				FAF71A6D2388C4D500B24AC0 /* Feed.swift in Sources */,
 				FA7DD79D238844DD00E6268A /* ContactsController.swift in Sources */,
 				FA7DD79F238844EA00E6268A /* Contacts.swift in Sources */,
 				FA28FE9C238655CA0050A0DC /* AppDelegate.swift in Sources */,
