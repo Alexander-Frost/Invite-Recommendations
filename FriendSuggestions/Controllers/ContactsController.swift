@@ -23,13 +23,7 @@ class ContactsController {
         }
     }
     
-    var imageContacts = [Contacts]() {
-        didSet { // Sort Contacts
-            imageContacts = imageContacts.sorted(by: { (contactA, contactB) -> Bool in
-                (contactA.givenName + contactA.familyName) < (contactB.givenName + contactB.familyName)
-            })
-        }
-    }
+    var imageContacts = [Contacts]() 
     
     // MARK: - Init
     

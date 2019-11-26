@@ -22,6 +22,7 @@
 		FAA503632388739A00BE4958 /* MainTestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA503622388739A00BE4958 /* MainTestTableViewController.swift */; };
 		FAA50366238884B400BE4958 /* InsertionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA50364238884B400BE4958 /* InsertionTableViewCell.swift */; };
 		FAA50367238884B400BE4958 /* InsertionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA50365238884B400BE4958 /* InsertionTableViewCell.xib */; };
+		FAB970C1238CE19E0025B883 /* GIF+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB970C0238CE19E0025B883 /* GIF+Extensions.swift */; };
 		FAF71A6D2388C4D500B24AC0 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF71A6C2388C4D500B24AC0 /* Feed.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		FAA503622388739A00BE4958 /* MainTestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTestTableViewController.swift; sourceTree = "<group>"; };
 		FAA50364238884B400BE4958 /* InsertionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionTableViewCell.swift; sourceTree = "<group>"; };
 		FAA50365238884B400BE4958 /* InsertionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InsertionTableViewCell.xib; sourceTree = "<group>"; };
+		FAB970C0238CE19E0025B883 /* GIF+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GIF+Extensions.swift"; sourceTree = "<group>"; };
 		FAF71A6C2388C4D500B24AC0 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 			children = (
 				FA28FE9B238655CA0050A0DC /* AppDelegate.swift */,
 				FA28FE9D238655CA0050A0DC /* SceneDelegate.swift */,
+				FAB970C0238CE19E0025B883 /* GIF+Extensions.swift */,
 				FAB970BF238CC5D60025B883 /* Storyboards */,
 				FA7DD7A02388450700E6268A /* Models */,
 				FA7DD7A12388468000E6268A /* Controllers */,
@@ -214,6 +217,7 @@
 				FAA503632388739A00BE4958 /* MainTestTableViewController.swift in Sources */,
 				FAF71A6D2388C4D500B24AC0 /* Feed.swift in Sources */,
 				FA7DD79D238844DD00E6268A /* ContactsController.swift in Sources */,
+				FAB970C1238CE19E0025B883 /* GIF+Extensions.swift in Sources */,
 				FA7DD79F238844EA00E6268A /* Contacts.swift in Sources */,
 				FA28FE9C238655CA0050A0DC /* AppDelegate.swift in Sources */,
 				FA5E6EAF238CC3BD006BE5A1 /* GIFViewController.swift in Sources */,

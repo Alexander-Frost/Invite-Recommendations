@@ -10,21 +10,23 @@ import UIKit
 
 class GIFViewController: UIViewController {
 
+    // MARK: - Outlets
+    
+    @IBOutlet weak var gifImageView: UIImageView!
+    
+    // MARK: - VC Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+     setupGif()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Methods
+    
+    private func setupGif(){
+        let gif = UIImage.gif(url: "https://media.giphy.com/media/zI19V0pvL7VbzQymhm/giphy.gif")
+        gifImageView.image = gif
     }
-    */
-
 }
