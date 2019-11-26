@@ -47,9 +47,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6M-H2-QXs">
-                        <rect key="frame" x="310" y="28.5" width="64" height="38"/>
+                        <rect key="frame" x="294" y="28.5" width="72" height="38"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="64" id="aMy-8G-Csg"/>
+                            <constraint firstAttribute="width" constant="72" id="aMy-8G-Csg"/>
                             <constraint firstAttribute="height" constant="38" id="eTS-7g-nG4"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
@@ -60,9 +60,16 @@
                             <action selector="addBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wwo-R8-3aA"/>
                         </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onD-KX-ALh">
-                        <rect key="frame" x="373" y="8" width="17" height="17"/>
-                        <state key="normal" title="x"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onD-KX-ALh">
+                        <rect key="frame" x="370" y="8" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="ZnJ-bX-7Ku"/>
+                            <constraint firstAttribute="height" constant="20" id="aAQ-0A-dVQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        <state key="normal" title="x">
+                            <color key="titleColor" red="0.76078431372549016" green="0.80784313725490198" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
                         <connections>
                             <action selector="exitBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yHJ-Vf-9Tt"/>
                         </connections>
@@ -76,7 +83,7 @@
                     <constraint firstItem="yM3-NE-e9A" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BtY-NU-KGK"/>
                     <constraint firstItem="I6M-H2-QXs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Kcs-HQ-ozK"/>
                     <constraint firstItem="HJo-Wr-dZd" firstAttribute="centerX" secondItem="uUx-Q9-MtY" secondAttribute="centerX" id="YOR-Jk-MJ3"/>
-                    <constraint firstAttribute="trailing" secondItem="I6M-H2-QXs" secondAttribute="trailing" constant="24" id="f7a-kK-ePK"/>
+                    <constraint firstAttribute="trailing" secondItem="I6M-H2-QXs" secondAttribute="trailing" constant="32" id="f7a-kK-ePK"/>
                     <constraint firstItem="yM3-NE-e9A" firstAttribute="leading" secondItem="uUx-Q9-MtY" secondAttribute="trailing" constant="12" id="h80-tJ-9ff"/>
                     <constraint firstAttribute="trailing" secondItem="onD-KX-ALh" secondAttribute="trailing" constant="8" id="zbV-Kr-IlU"/>
                 </constraints>

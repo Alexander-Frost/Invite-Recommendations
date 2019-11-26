@@ -8,6 +8,50 @@
 
 import UIKit
 
+extension UIView {
+    func addBorder(color: CGColor){
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = color
+        self.makeCorner(withRadius: self.frame.size.height / 2)
+    }
+    
+    func makeCircle() {
+        self.layer.cornerRadius = self.frame.size.height / 2;
+        self.layer.masksToBounds = true;
+    }
+    
+    // used to round view controller view
+    func makeCorner(withRadius radius: CGFloat) {
+        self.layer.cornerRadius = radius
+        self.layer.masksToBounds = true
+        self.layer.isOpaque = false
+    }
+    
+    func buttonLayout(){
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = #colorLiteral(red: 0.6156862745, green: 0.6156862745, blue: 0.6156862745, alpha: 1)
+        self.layer.cornerRadius = self.frame.size.height / 2
+        self.layer.masksToBounds = true
+    }
+    
+    var parentViewController: UIViewController? {
+        var parentResponder: UIResponder? = self
+        while parentResponder != nil {
+            parentResponder = parentResponder!.next
+            if parentResponder is UIViewController {
+                return parentResponder as? UIViewController
+            }
+        }
+        return nil
+    }
+}
+
+extension String {
+    var initials: String {
+        return self.components(separatedBy: " ").filter { !$0.isEmpty }.reduce("") { ($0 == "" ? "" : "\($0.first!)") + "\($1.first!)" }.uppercased()
+    }
+}
+
 extension UIImageView {
     
     public func loadGif(name: String) {

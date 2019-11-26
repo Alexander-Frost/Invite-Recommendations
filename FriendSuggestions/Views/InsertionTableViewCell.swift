@@ -13,16 +13,26 @@ class InsertionTableViewCell: UITableViewCell {
     // MARK: - Properties
     
     let contactsController = ContactsController()
-//    var imageTotal: [Contacts]? = {
-//        return contactsController.imageContacts.shuffled()
-//    }
+    var imageTotal: [Contacts] {
+        return contactsController.imageContacts.shuffled()
+    }
     
     let cellHeight: CGFloat = 70.0
     
     // MARK: - Outlets
     
+    @IBOutlet weak var shuffleBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
+    
+    // MARK: - Actions
+    
+    @IBAction func shuffleBtnPressed(_ sender: UIButton) {
+//        contactsController.imageContacts.shuffled()
+//        imageTotal.shuffled()
+        print("HERE imageTotal: ", imageTotal)
+        tableView.reloadData()
+    }
     
     // MARK: - VC Lifecycle
     
@@ -72,7 +82,7 @@ extension InsertionTableViewCell: UITableViewDataSource {
     
     @objc func hideRow(sender: UIButton){
         print("Hiding row")
-        tableView.reloadData()
+        //tableView.reloadData()
         let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
         guard let currentIndex = tableView.indexPathForRow(at: buttonPosition) else {return}
         
@@ -83,7 +93,7 @@ extension InsertionTableViewCell: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("SuggestionsTableViewCell", owner: self, options: nil)?.first as! SuggestionsTableViewCell
-        let imageContacts = contactsController.imageContacts.shuffled()
+        let imageContacts = imageTotal //contactsController.imageContacts //.shuffled()
         cell.friendSuggestion = imageContacts[indexPath.row]
         cell.exitBtn.addTarget(self, action: #selector(hideRow(sender:)), for: .touchDown)
         return cell

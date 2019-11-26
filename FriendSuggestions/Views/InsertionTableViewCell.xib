@@ -29,17 +29,30 @@
                         <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1D-tg-GjW">
+                        <rect key="frame" x="361" y="-0.5" width="50" height="31.5"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                        <state key="normal" title="Shuffle">
+                            <color key="titleColor" red="0.61568627450000002" green="0.61568627450000002" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="shuffleBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KhE-cm-j0s"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="sks-rH-Cei" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5Ns-BF-T1j"/>
                     <constraint firstItem="odl-NT-E9Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Lv9-AY-MRR"/>
                     <constraint firstAttribute="trailing" secondItem="sks-rH-Cei" secondAttribute="trailing" id="VlV-0v-Fib"/>
+                    <constraint firstAttribute="trailing" secondItem="x1D-tg-GjW" secondAttribute="trailing" constant="8" id="h18-Zf-9bv"/>
                     <constraint firstItem="sks-rH-Cei" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="hVc-Ef-Nte"/>
                     <constraint firstItem="odl-NT-E9Q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="kdy-8d-2pp"/>
+                    <constraint firstItem="x1D-tg-GjW" firstAttribute="centerY" secondItem="odl-NT-E9Q" secondAttribute="centerY" id="mw5-TX-Xgj"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="shuffleBtn" destination="x1D-tg-GjW" id="5Ea-Us-Hkq"/>
                 <outlet property="tableView" destination="sks-rH-Cei" id="tzT-cY-kED"/>
                 <outlet property="tableViewHeightConstraint" destination="tXc-Cy-88M" id="r7e-ri-cwt"/>
             </connections>

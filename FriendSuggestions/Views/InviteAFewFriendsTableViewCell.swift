@@ -49,12 +49,3 @@ class InviteAFewFriendsTableViewCell: UITableViewCell {
     }
     
 }
-
-extension UIView {
-    func addBorder(color: CGColor){
-        self.layer.borderWidth = 1.0
-        self.layer.borderColor = color
-        self.makeCorner(withRadius: self.frame.size.height / 2)
-    }
-    
-}
