@@ -13,6 +13,8 @@
 		FA28FEA5238655CB0050A0DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA28FEA4238655CB0050A0DC /* Assets.xcassets */; };
 		FA28FEA8238655CB0050A0DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA28FEA6238655CB0050A0DC /* LaunchScreen.storyboard */; };
 		FA28FEB123865F570050A0DC /* SuggestionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */; };
+		FA5E6EAC238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E6EAA238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.swift */; };
+		FA5E6EAD238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5E6EAB238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.xib */; };
 		FA7DD79D238844DD00E6268A /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DD79C238844DD00E6268A /* ContactsController.swift */; };
 		FA7DD79F238844EA00E6268A /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DD79E238844EA00E6268A /* Contacts.swift */; };
 		FA7DD7A32388476200E6268A /* SuggestionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7DD7A22388476200E6268A /* SuggestionsTableViewCell.xib */; };
@@ -31,6 +33,8 @@
 		FA28FEA7238655CB0050A0DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA28FEA9238655CB0050A0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsTableViewCell.swift; sourceTree = "<group>"; };
+		FA5E6EAA238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteAFewFriendsTableViewCell.swift; sourceTree = "<group>"; };
+		FA5E6EAB238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InviteAFewFriendsTableViewCell.xib; sourceTree = "<group>"; };
 		FA7DD79C238844DD00E6268A /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
 		FA7DD79E238844EA00E6268A /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		FA7DD7A22388476200E6268A /* SuggestionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestionsTableViewCell.xib; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 			children = (
 				FAA50365238884B400BE4958 /* InsertionTableViewCell.xib */,
 				FAA50364238884B400BE4958 /* InsertionTableViewCell.swift */,
+				FA5E6EAB238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.xib */,
+				FA5E6EAA238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.swift */,
 				FA7DD7A22388476200E6268A /* SuggestionsTableViewCell.xib */,
 				FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */,
 			);
@@ -181,6 +187,7 @@
 				FAA50367238884B400BE4958 /* InsertionTableViewCell.xib in Resources */,
 				FA28FEA8238655CB0050A0DC /* LaunchScreen.storyboard in Resources */,
 				FA28FEA5238655CB0050A0DC /* Assets.xcassets in Resources */,
+				FA5E6EAD238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.xib in Resources */,
 				FA7DD7A32388476200E6268A /* SuggestionsTableViewCell.xib in Resources */,
 				FA28FEA3238655CA0050A0DC /* Main.storyboard in Resources */,
 			);
@@ -199,6 +206,7 @@
 				FA7DD79F238844EA00E6268A /* Contacts.swift in Sources */,
 				FA28FE9C238655CA0050A0DC /* AppDelegate.swift in Sources */,
 				FAA50366238884B400BE4958 /* InsertionTableViewCell.swift in Sources */,
+				FA5E6EAC238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.swift in Sources */,
 				FA28FE9E238655CA0050A0DC /* SceneDelegate.swift in Sources */,
 				FA28FEB123865F570050A0DC /* SuggestionsTableViewCell.swift in Sources */,
 			);
