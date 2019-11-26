@@ -15,6 +15,7 @@
 		FA28FEB123865F570050A0DC /* SuggestionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */; };
 		FA5E6EAC238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E6EAA238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.swift */; };
 		FA5E6EAD238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5E6EAB238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.xib */; };
+		FA5E6EAF238CC3BD006BE5A1 /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E6EAE238CC3BD006BE5A1 /* GIFViewController.swift */; };
 		FA7DD79D238844DD00E6268A /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DD79C238844DD00E6268A /* ContactsController.swift */; };
 		FA7DD79F238844EA00E6268A /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DD79E238844EA00E6268A /* Contacts.swift */; };
 		FA7DD7A32388476200E6268A /* SuggestionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7DD7A22388476200E6268A /* SuggestionsTableViewCell.xib */; };
@@ -35,6 +36,7 @@
 		FA28FEAF23865F570050A0DC /* SuggestionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsTableViewCell.swift; sourceTree = "<group>"; };
 		FA5E6EAA238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteAFewFriendsTableViewCell.swift; sourceTree = "<group>"; };
 		FA5E6EAB238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InviteAFewFriendsTableViewCell.xib; sourceTree = "<group>"; };
+		FA5E6EAE238CC3BD006BE5A1 /* GIFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
 		FA7DD79C238844DD00E6268A /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
 		FA7DD79E238844EA00E6268A /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		FA7DD7A22388476200E6268A /* SuggestionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestionsTableViewCell.xib; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA503622388739A00BE4958 /* MainTestTableViewController.swift */,
+				FA5E6EAE238CC3BD006BE5A1 /* GIFViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				FA7DD79D238844DD00E6268A /* ContactsController.swift in Sources */,
 				FA7DD79F238844EA00E6268A /* Contacts.swift in Sources */,
 				FA28FE9C238655CA0050A0DC /* AppDelegate.swift in Sources */,
+				FA5E6EAF238CC3BD006BE5A1 /* GIFViewController.swift in Sources */,
 				FAA50366238884B400BE4958 /* InsertionTableViewCell.swift in Sources */,
 				FA5E6EAC238CBC28006BE5A1 /* InviteAFewFriendsTableViewCell.swift in Sources */,
 				FA28FE9E238655CA0050A0DC /* SceneDelegate.swift in Sources */,

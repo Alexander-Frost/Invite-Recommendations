@@ -44,6 +44,7 @@ class MainTestTableViewController: UITableViewController {
             return cell
         } else if let _ = item.ad {
             let inviteAFewCell = Bundle.main.loadNibNamed("InviteAFewFriendsTableViewCell", owner: self, options: nil)?.first as! InviteAFewFriendsTableViewCell
+            inviteAFewCell.addFriendBtn.addTarget(self, action: #selector(invitePressed(sender:)), for: .touchDown)
             return inviteAFewCell
         } else {
             let cell = Bundle.main.loadNibNamed("InsertionTableViewCell", owner: self, options: nil)?.first as! InsertionTableViewCell
@@ -52,6 +53,10 @@ class MainTestTableViewController: UITableViewController {
         }
     }
 
+    @objc func invitePressed(sender: UIButton){
+        print("HERE invite pressed")
+        performSegue(withIdentifier: "GIFSegue", sender: self)
+    }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let item = dataSource[indexPath.row]
 
