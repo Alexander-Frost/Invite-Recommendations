@@ -9,11 +9,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="182" id="KGk-i7-Jjw" customClass="InviteAFewFriendsTableViewCell" customModule="FriendSuggestions" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="368" height="182"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="198" id="KGk-i7-Jjw" customClass="InviteAFewFriendsTableViewCell" customModule="FriendSuggestions" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="198"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="368" height="182"/>
+                <rect key="frame" x="0.0" y="0.0" width="368" height="198"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite a few friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7A-2T-ks8">
@@ -22,25 +22,6 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viy-0C-tZv">
-                        <rect key="frame" x="151.5" y="119" width="65" height="26"/>
-                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
-                        <state key="normal" title="Add 1 friend">
-                            <color key="titleColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
-                        </state>
-                        <connections>
-                            <action selector="addFriendBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0AW-8j-JWu"/>
-                        </connections>
-                    </button>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jh9-X2-GBA">
-                        <rect key="frame" x="11" y="63" width="347" height="48.5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <string key="text">Weekend is better with friends. Invite 1 of your friends.
-Thanks for building the community!</string>
-                        <color key="textColor" red="0.47450980392156861" green="0.49803921568627452" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
-                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcs-rA-chT">
                         <rect key="frame" x="330" y="8" width="30" height="25"/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
@@ -51,15 +32,42 @@ Thanks for building the community!</string>
                             <action selector="skipBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="K4Y-vZ-2AS"/>
                         </connections>
                     </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh9-X2-GBA">
+                        <rect key="frame" x="10.5" y="57" width="347" height="48.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="347" id="tQz-Pv-owi"/>
+                            <constraint firstAttribute="height" constant="48.5" id="u71-St-SBu"/>
+                        </constraints>
+                        <string key="text">Weekend is better with friends. Invite 1 of your friends.
+Thanks for building the community!</string>
+                        <color key="textColor" red="0.47450980392156861" green="0.49803921568627452" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viy-0C-tZv">
+                        <rect key="frame" x="123" y="129.5" width="122" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="122" id="4kU-pX-M8B"/>
+                            <constraint firstAttribute="height" constant="40" id="huw-DD-s4G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <state key="normal" title="Add 1 friend">
+                            <color key="titleColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="addFriendBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0AW-8j-JWu"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="jh9-X2-GBA" firstAttribute="top" secondItem="h7A-2T-ks8" secondAttribute="bottom" constant="8" id="3Uh-Vi-Mbx"/>
+                    <constraint firstItem="jh9-X2-GBA" firstAttribute="top" secondItem="h7A-2T-ks8" secondAttribute="bottom" constant="4" id="3Uh-Vi-Mbx"/>
                     <constraint firstAttribute="trailing" secondItem="kcs-rA-chT" secondAttribute="trailing" constant="8" id="Mwj-EP-hw9"/>
                     <constraint firstItem="jh9-X2-GBA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="N3D-9L-krV"/>
                     <constraint firstItem="kcs-rA-chT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="SF1-KE-loa"/>
                     <constraint firstItem="h7A-2T-ks8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="VEN-vY-TVa"/>
                     <constraint firstItem="h7A-2T-ks8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="g6I-Ts-65Z"/>
-                    <constraint firstItem="viy-0C-tZv" firstAttribute="top" secondItem="jh9-X2-GBA" secondAttribute="bottom" constant="16" id="puy-si-4yZ"/>
+                    <constraint firstItem="viy-0C-tZv" firstAttribute="top" secondItem="jh9-X2-GBA" secondAttribute="bottom" constant="24" id="puy-si-4yZ"/>
                     <constraint firstItem="viy-0C-tZv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="sBR-yJ-OO3"/>
                 </constraints>
             </tableViewCellContentView>
@@ -68,7 +76,7 @@ Thanks for building the community!</string>
                 <outlet property="addFriendBtn" destination="viy-0C-tZv" id="KuE-C7-eAu"/>
                 <outlet property="skipBtn" destination="kcs-rA-chT" id="8SU-8S-8eW"/>
             </connections>
-            <point key="canvasLocation" x="169.56521739130437" y="150.66964285714286"/>
+            <point key="canvasLocation" x="169.56521739130437" y="156.02678571428569"/>
         </tableViewCell>
     </objects>
 </document>

@@ -18,7 +18,7 @@ class MainTestTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("Running")
         tableView.tableFooterView = UIView()
     }
 
@@ -39,11 +39,10 @@ class MainTestTableViewController: UITableViewController {
         
         let item = dataSource[indexPath.row]
         
-        if let insertion = item.contact {
+        if let _ = item.contact {
             let cell = Bundle.main.loadNibNamed("InsertionTableViewCell", owner: self, options: nil)?.first as! InsertionTableViewCell
-
             return cell
-        } else if let invite = item.ad {
+        } else if let _ = item.ad {
             let inviteAFewCell = Bundle.main.loadNibNamed("InviteAFewFriendsTableViewCell", owner: self, options: nil)?.first as! InviteAFewFriendsTableViewCell
             return inviteAFewCell
         } else {
@@ -56,9 +55,9 @@ class MainTestTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let item = dataSource[indexPath.row]
 
-        if let insertion = item.contact {
+        if let _ = item.contact {
             return 232
-        } else if let invite = item.ad {
+        } else if let _ = item.ad {
             return 200
         } else {
             return 232

@@ -35,6 +35,12 @@ class InviteAFewFriendsTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
+        if selected {
+            contentView.backgroundColor = UIColor.white
+        } else {
+            contentView.backgroundColor = UIColor.white
+        }
     }
     
     override func layoutSubviews() {
@@ -45,13 +51,10 @@ class InviteAFewFriendsTableViewCell: UITableViewCell {
 }
 
 extension UIView {
-    func addBorder(color: CGColor, border width: CGFloat = 3.0, on: Bool = true){
-        if on {
-            self.layer.borderWidth = width
-            self.layer.borderColor = color
-        } else {
-            self.layer.borderWidth = 0
-        }
+    func addBorder(color: CGColor){
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = color
+        self.makeCorner(withRadius: self.frame.size.height / 2)
     }
     
 }
