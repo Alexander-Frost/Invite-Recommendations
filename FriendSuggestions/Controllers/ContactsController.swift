@@ -53,9 +53,12 @@ class ContactsController {
                     let myBool = name.containsEmoji || familyName.containsEmoji
                     
                     // get thumbnail image
-                    if let thumbnailData = contact.thumbnailImageData, contact.imageDataAvailable || myBool {
+                    if let thumbnailData = contact.thumbnailImageData, contact.imageDataAvailable {
                         let image = UIImage(data: thumbnailData)
                         contactToAppend = Contacts(givenName: name, familyName: familyName, number: number ?? "No Name", isAdded: false, timeAdded: "NA", avatar: image)
+                        myImageContacts.append(contactToAppend)
+                    } else if myBool {
+                        contactToAppend = Contacts(givenName: name, familyName: familyName, number: number ?? "No Name", isAdded: false, timeAdded: "NA", avatar: nil)
                         myImageContacts.append(contactToAppend)
                     } else {
                         contactToAppend = Contacts(givenName: name, familyName: familyName, number: number ?? "No Name", isAdded: false, timeAdded: "NA", avatar: nil)

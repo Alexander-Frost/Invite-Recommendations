@@ -76,7 +76,8 @@ class SuggestionsTableViewCell: UITableViewCell {
         if contact.avatar == nil {
             initialsLbl.isHidden = false
             let name = contact.givenName + " " + contact.familyName
-            initialsLbl.text = name.initials
+            initialsLbl.text = "😁" //name.initials
+            initialsLbl.font = UIFont.systemFont(ofSize: 40.0)
         } else {
             initialsLbl.isHidden = true
         }
