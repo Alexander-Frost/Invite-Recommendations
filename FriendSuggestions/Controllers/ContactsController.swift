@@ -50,8 +50,10 @@ class ContactsController {
                     
                     let contactToAppend: Contacts
                     
+                    let myBool = name.containsEmoji || familyName.containsEmoji
+                    
                     // get thumbnail image
-                    if let thumbnailData = contact.thumbnailImageData, contact.imageDataAvailable {
+                    if let thumbnailData = contact.thumbnailImageData, contact.imageDataAvailable || myBool {
                         let image = UIImage(data: thumbnailData)
                         contactToAppend = Contacts(givenName: name, familyName: familyName, number: number ?? "No Name", isAdded: false, timeAdded: "NA", avatar: image)
                         myImageContacts.append(contactToAppend)
@@ -70,6 +72,18 @@ class ContactsController {
             completion(nil)
         }
     }
+    
+    // Return list of contacts that have an emoji in their name
+    func contactsWEmoji(contacts: [Contacts]) -> [Contacts]{
+        var emojiContacts = [Contacts]()
+        for cont in contacts {
+            if cont.familyName.containsEmoji || cont.givenName.containsEmoji {
+                emojiContacts.append(cont)
+            } else {continue}
+        }
+        return emojiContacts
+    }
+    
     
     // MARK: - Helpers
     
